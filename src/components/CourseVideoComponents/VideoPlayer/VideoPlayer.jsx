@@ -527,6 +527,7 @@ const VideoPlayer = (props) => {
           </div>
         </div>
       </div>
+     
       <video
         ref={videoPlayer}
         controlsList="nodownload"

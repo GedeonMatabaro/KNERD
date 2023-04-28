@@ -12,6 +12,8 @@ import TabbedCourseCarouselComp from "../../../components/CarouselComponents/Tab
 
 import {
   coursesData,
+  coursesData2,
+  coursesData3,
   det,
   det2,
   det3,
@@ -73,37 +75,36 @@ const LoggedInUserHomePage = () => {
               ttl="Students are viewing"
               link="/"
               linkTxt="Txt for link"
-              coursesData={coursesData}
+              coursesData={coursesData2}
+              ID="first"
             />
           </div>
           <div className={css.m1}>
+            <h1 className={css.colTtl}>Featured courses in</h1>
             <CourseCarouselComp
-              ttl="Recommended for you"
-              coursesData={coursesData}
+              ttl="Featured courses in"
+              link="/"
+              linkTxt="Txt for link"
+              coursesData={coursesData3}
+              ID="second"
             />
           </div>
-          <div className={css.m1}>
+          {/* <div className={css.m1}>
             <TabbedCourseCarouselComp
               ttl="Featured courses in"
               link="/"
               linkTxt=" React JS"
-              coursesData={coursesData}
+              coursesData={coursesData3}
             />
-          </div>
-          <div className={css.m1}>
+          </div> */}
+          {/* <div className={css.m1}>
             <CourseCarouselComp
               ttl="New and noteworthy in Web Development"
               link="/"
               linkTxt="Web Development"
-              coursesData={coursesData}
+              coursesData={coursesData3}
             />
-          </div>
-          <div className={css.m1}>
-            <CourseCarouselComp
-              ttl="Students are viewing"
-              coursesData={coursesData}
-            />
-          </div>
+          </div> */}
         </div>
       </Layout1>
     </>

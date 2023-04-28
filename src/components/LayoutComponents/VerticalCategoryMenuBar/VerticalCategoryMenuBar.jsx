@@ -31,7 +31,7 @@ const VerticalCategoryMenuBar = () => {
 
     for (let i = 0; i < subCatDivs.length; i++) {
       subCatDivs[i].addEventListener("mouseover", () => {
-        subCatDivs[i].style = "display: flex";
+        subCatDivs[i].style = "display: flex; align: center; flex-direction";
       });
       subCatDivs[i].addEventListener("mouseleave", () => {
         subCatDivs[i].style = "display: none";
@@ -67,9 +67,9 @@ const VerticalCategoryMenuBar = () => {
   }, []);
 
   return (
-    <div className={css.outerDiv} id="vouterDiv">
+    <div className={css.outerDiv} id="vouterDiv" >
       <div className={css.innerDiv}>
-        <div className={css.cats} id="cats">
+        <div className={css.cats} id="cats" >
           {categoriesSubCategoriesData?.map((cat) => (
             <div
               key={cat.id}

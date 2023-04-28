@@ -7,6 +7,8 @@ import TrustedByBest from "../../../components/HomePageComponents/TrustedByBest/
 import HomeShowcaseCard from "../../../components/Cards/HomeShowcaseCard/HomeShowcaseCard";
 import CourseCarouselComp from "../../../components/CarouselComponents/CourseCarouselComp/CourseCarouselComp";
 import BannerCarouselComp from "../../../components/CarouselComponents/BannerCarouselComp/BannerCarouselComp";
+import Login from "../../../pages/JoinPages/LoginPage/Login";
+import Signup from "../../../pages/JoinPages/Signup/Signup";
 
 import { coursesData, det, det2, det3 } from "../../../fakedata/fakedata";
 
@@ -75,11 +77,13 @@ const HomePage = () => {
             />
           </div>
         </div>
-        <FeaturedTopics />
+        {/* <FeaturedTopics />
         <HomeShowcaseCard det={det} />
         <TrustedByBest />
         <HomeShowcaseCard det={det2} />
-        <HomeShowcaseCard det={det3} />
+        <HomeShowcaseCard det={det3} /> */}
+        {/* <Login/> */}
+        <Signup/>
       </Layout1>
     </>
   );

@@ -9,6 +9,8 @@ let routes = nonLoggedinRoutes;
 
 if (login) {
   routes = loggedinRoutes;
+} else {
+  route = nonLoggedinRoutes;
 }
 
 const router = createBrowserRouter(routes);

@@ -6,6 +6,13 @@ import certificateIcon from "/icons/certificate.png";
 import cardImg from "/images/card.jpg";
 import cardImg2 from "/images/card2.jpg";
 import cardImg3 from "/images/card3.jpg";
+import Imgs1 from "../../public/images/Cart/Cpp_programming.png";
+import Imgs2 from "../../public/images/Cart/C_programming.jpg";
+import Imgs3 from "../../public/images/Cart/Css_programming.jpg";
+import Imgs4 from "../../public/images/Cart/Php_programming.jpg";
+import Imgs5 from "../../public/images/Cart/JavaPrograming.jpg";
+import Imgs6 from "../../public/images/Cart/Js.jpg";
+import Imgs7 from "../../public/images/Cart/Algebra.png";
 import showcaseImg from "/images/showcase.jpg";
 import showcaseImg2 from "/images/showcase2.jpg";
 import showcaseImg3 from "/images/showcase3.jpg";
@@ -801,7 +808,7 @@ const courseDetData = {
   ttl: "Learn Python: The Complete Python Programming Course",
   desc: "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
   price: 600,
-  discPrice: 3299,
+  discPrice: 0,
   disc: 85,
   tmLeft: 7,
   rating: 4.3,
@@ -820,9 +827,29 @@ const crsData = {
   ttl: "Learn Python: The Complete Python Programming Course",
   authDet:
     "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more",
-  prc: 600,
+  prc: 0,
   oldprc: 3299,
-  stars: { a: 2, b: 3, c: 5, d: 8, e: 9 },
+  stars: { a: 1, b: 1, c: 1, d: 2, e: 9 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Python For Beginners : This course is meant for absolute beginners in programming or in python.",
+};
+
+const crsData1 = {
+  path: "/",
+  img: Imgs1,
+  id: 2,
+  ttl: "Learn C++: The Complete Python Programming Course",
+  authDet:
+    "Learn A-Z everything about C++, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more",
+  prc: 0,
+  oldprc: 3299,
+  stars: { a: 2, b: 8, c: 1, d: 9, e: 9 },
   noOfRats: 5,
   updatedDate: new Intl.DateTimeFormat("en-IN", {
     dateStyle: "long",
@@ -834,11 +861,11 @@ const crsData = {
 };
 const crsData2 = {
   path: "/",
-  img: cardImg2,
-  id: 1,
-  ttl: "Learn Python: The Complete Python Programming Course",
+  img: Imgs2,
+  id: 3,
+  ttl: "Learn C: The Complete C Programming Course",
   authDet:
-    "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more",
+    "Learn A-Z everything about C, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more",
   prc: 600,
   oldprc: 3299,
   stars: { a: 2, b: 3, c: 5, d: 8, e: 9 },
@@ -853,14 +880,14 @@ const crsData2 = {
 };
 const crsData3 = {
   path: "/",
-  img: cardImg3,
-  id: 1,
-  ttl: "Learn Python: The Complete Python Programming Course",
+  img: Imgs3,
+  id: 4,
+  ttl: "Learn CSS: The Complete CSS Course",
   authDet:
-    "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more",
+    "Learn A-Z everything about CSS, from the basics, to advanced topics like Animation and more.",
   prc: 600,
   oldprc: 3299,
-  stars: { a: 2, b: 3, c: 5, d: 8, e: 9 },
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
   noOfRats: 5,
   updatedDate: new Intl.DateTimeFormat("en-IN", {
     dateStyle: "long",
@@ -868,50 +895,115 @@ const crsData3 = {
   courseDuration: 1000000,
   level: "Beginner Level",
   crsSubtxt:
-    "Python For Beginners : This course is meant for absolute beginners in programming or in python.",
+    "CSS For Beginners : This course is meant for absolute beginners in css.",
+};
+const crsData4 = {
+  path: "/",
+  img: Imgs4,
+  id: 5,
+  ttl: "Learn Php: The Complete PHP Course",
+  authDet:
+    "Learn A-Z everything about PHP, from the basics, to advanced topics like Authenification.",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "PHP For Beginners : This course is meant for absolute beginners in programming or in PHP.",
+};
+const crsData5 = {
+  path: "/",
+  img: Imgs5,
+  id: 6,
+  ttl: "Learn Javascript: The Complete PHP Course",
+  authDet:
+    "Learn A-Z everything about Javascript, from the basics, to advanced topics like Authenification, high-order function",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Js For Beginners : This course is meant for absolute beginners in programming or in Js.",
+};
+const crsData6 = {
+  path: "/",
+  img: Imgs6,
+  id: 7,
+  ttl: "Learn Java: The Complete PHP Course",
+  authDet:
+    "Learn A-Z everything about Javascript, from the basics, to advanced topics like Authenification, OOP",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Java For Beginners : This course is meant for absolute beginners in programming or in Java.",
+};
+const crsData7 = {
+  path: "/",
+  img: Imgs7,
+  id: 8,
+  ttl: "Learn Linear Algebra: The Complete Linear Algebra Course",
+  authDet:
+    "Learn A-Z everything about Linar Algebra",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Java For Beginners : This course is meant for absolute beginners in Algebra.",
 };
 
 const coursesData = [
   crsData,
-  crsData,
-  crsData,
-  crsData,
-  crsData,
-  crsData,
-  crsData,
-  crsData,
-  crsData,
-  crsData,
-  crsData,
-  crsData,
+  crsData1,
+  crsData2,
+  crsData3,
+  crsData4,
+  crsData5,
+  crsData6,
+  crsData7,
 ];
 const coursesData2 = [
+  crsData,
+  crsData1,
   crsData2,
-  crsData2,
-  crsData2,
-  crsData2,
-  crsData2,
-  crsData2,
-  crsData2,
-  crsData2,
-  crsData2,
-  crsData2,
-  crsData2,
-  crsData2,
+  crsData6,
+  crsData7,
+  crsData3,
+  crsData4,
+  crsData5,
+ 
 ];
 const coursesData3 = [
+  crsData7,
   crsData3,
-  crsData3,
-  crsData3,
-  crsData3,
-  crsData3,
-  crsData3,
-  crsData3,
-  crsData3,
-  crsData3,
-  crsData3,
-  crsData3,
-  crsData3,
+  crsData4,
+  crsData5,
+  crsData1,
+  crsData2,
+  crsData,
+  crsData6,
 ];
 
 const crsDataWO = {
@@ -1141,11 +1233,6 @@ const categoriesSubCategoriesData = [
     subCatId: "subCat-6",
     sub: [
       { id: 1, ttl: "Personal Development", link: "/" },
-      { id: 2, ttl: "Mobile Development", link: "/" },
-      { id: 3, ttl: "Web Development", link: "/" },
-      { id: 4, ttl: "Mobile Development", link: "/" },
-      { id: 5, ttl: "Web Development", link: "/" },
-      { id: 6, ttl: "Mobile Development", link: "/" },
     ],
   },
   {
@@ -1181,20 +1268,6 @@ const categoriesSubCategoriesData = [
     ttl: "Software Development Tools",
     link: "/",
     subCatId: "subCat-9",
-    sub: [
-      { id: 1, ttl: "Personal Development", link: "/" },
-      { id: 2, ttl: "Mobile Development", link: "/" },
-      { id: 3, ttl: "Web Development", link: "/" },
-      { id: 4, ttl: "Mobile Development", link: "/" },
-      { id: 5, ttl: "Web Development", link: "/" },
-      { id: 6, ttl: "Mobile Development", link: "/" },
-    ],
-  },
-  {
-    id: 10,
-    ttl: "No-code Development",
-    link: "/",
-    subCatId: "subCat-10",
     sub: [
       { id: 1, ttl: "Personal Development", link: "/" },
       { id: 2, ttl: "Mobile Development", link: "/" },
@@ -1240,13 +1313,11 @@ const coursesInCartData = [
     id: 1,
     ttl: "Learn Python: The Complete Python Programming Course",
     img: cardImg,
-    price: "3399",
   },
   {
     id: 2,
     ttl: "Learn Python: The Complete Python Programming Course",
     img: cardImg,
-    price: "3399",
   },
 ];
 

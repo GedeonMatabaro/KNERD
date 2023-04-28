@@ -8,7 +8,6 @@ import CircleButton from "../../../utils/Buttons/CircleButton/CircleButton";
 import css from "./CourseCard.module.css";
 
 import heartIcon from "/icons/heart.png";
-
 const CourseCard = (props) => {
   const {
     path = "/",
@@ -26,7 +25,7 @@ const CourseCard = (props) => {
     level = "Beginner Level",
     crsSubtxt = "Python For Beginners : This course is meant for absolute beginners in programming or in python.",
   } = props?.data;
-
+  const { key, data, onClick } = props;
   const extraCss = props.extraCss;
 
   let totalRating = (
@@ -56,7 +55,7 @@ const CourseCard = (props) => {
 
   return (
     <>
-      <div className={css.outerDiv} id={props.id} style={extraCss}>
+      <div className={css.outerDiv} id={props.data.id} style={extraCss} onClick={() => onClick(props.data.id + 1)}>
         <Link className={css.innerDiv} to={path}>
           <div className={css.imgBox}>
             <img src={img} alt="course thumbnail" className={css.courseImg} />
@@ -69,23 +68,7 @@ const CourseCard = (props) => {
               <div className={css.rat2}>{totalRating}</div>
               <div className={css.noOfRats}>({noOfRats})</div>
             </div>
-            <div className={css.prc}>
-              <span className={css.newPrc}>
-                {new Intl.NumberFormat("en-IN", {
-                  style: "currency",
-                  currency: "INR",
-                }).format(prc)}
-              </span>
-              <span className={css.oldPrc}>
-                {new Intl.NumberFormat("en-IN", {
-                  style: "currency",
-                  currency: "INR",
-                }).format(oldprc)}
-              </span>
-            </div>
-            <div className={css.tags}>
-              <TAG1 />
-            </div>
+      
           </div>
         </Link>
         <div className={css.hovCard}>
@@ -107,22 +90,6 @@ const CourseCard = (props) => {
               <div className={css.crseDetInerE}>Subtitles</div>
             </div>
             <div className={css.crsSubtxt}>{crsSubtxt}</div>
-            <ul className={css.list}>
-              <li className={css.listItem}>
-                <span className={css.tick}></span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                dolore reiciendis ea maiores eos eligendi architecto illo.
-                Cupiditate iure, vero, laboriosam laudantium perferendis odio
-                expedita quisquam culpa quae earum provident.
-              </li>
-              <li className={css.listItem}>
-                <span className={css.tick}></span>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempora ullam autem impedit porro veniam, laboriosam debitis
-                eveniet reprehenderit numquam atque inventore recusandae hic
-                veritatis similique officia? Rerum, nesciunt! Repudiandae, sint.
-              </li>
-            </ul>
             <div className={css.btns}>
               <Button1
                 onClick={addToCartHandler}

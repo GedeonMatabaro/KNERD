@@ -88,11 +88,10 @@ const TabbedCourseCarouselComp = (props) => {
         <hr className={css.hr} />
       </div>
       <Slider {...settings}>
-        {courseData[activeTab]?.map((item, id) => {
+        {courseData[activeTab]?.map((item) => {
           return (
             <CourseCard
-              key={`tabbed-course-${id}`}
-              id={`tabbed-course-${id}`}
+              key={item.id}
               data={item}
             />
           );

@@ -1,7 +1,5 @@
-import Tag from "../../../utils/Tags/TAG1/TAG1";
-
 import css from "./BigVerticalCourseCard.module.css";
-
+// This renders in my courses all the courses
 const BigVerticalCourseCard = (props) => {
   const {
     id = 0,
@@ -44,24 +42,6 @@ const BigVerticalCourseCard = (props) => {
             <div className={css.rats}>
               <div className={css.rat}>{rats}</div>
               <div className={css.cnt}>({rated})</div>
-              <Tag
-                txt={tag}
-                extraCss={{ backgroundColor: "var(--light-orangish)" }}
-              />
-            </div>
-          </div>
-          <div className={css.rightDetBox}>
-            <div className={css.prc}>
-              {new Intl.NumberFormat("en-IN", {
-                style: "currency",
-                currency: "INR",
-              }).format(price)}
-            </div>
-            <div className={css.oPrc}>
-              {new Intl.NumberFormat("en-IN", {
-                style: "currency",
-                currency: "INR",
-              }).format(oPrice)}
             </div>
           </div>
         </div>
