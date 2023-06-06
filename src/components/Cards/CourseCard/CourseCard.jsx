@@ -55,7 +55,7 @@ const CourseCard = (props) => {
 
   return (
     <>
-      <div className={css.outerDiv} id={props.data.id} style={extraCss} onClick={() => onClick(props.data.id + 1)}>
+      <div className={css.outerDiv} id={props.id} style={extraCss} onClick={() => onClick(props.data.id + 1)}>
         <Link className={css.innerDiv} to={path}>
           <div className={css.imgBox}>
             <img src={img} alt="course thumbnail" className={css.courseImg} />

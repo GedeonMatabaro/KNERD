@@ -32,6 +32,5 @@ export const ListPlaylist = [
     'PLr3d3QYzkw2xabQRUpcZ_IBk9W50M9pe-', 
     'PLFE2CE09D83EE3E28',
     'PLTxsP_8juQ3gEJn9GMggS-o_FBE7-LKnO', 
-    
     'PLFD0EB975BA0CC1E0'
 ];

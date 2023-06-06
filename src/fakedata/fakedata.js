@@ -13,6 +13,25 @@ import Imgs4 from "../../public/images/Cart/Php_programming.jpg";
 import Imgs5 from "../../public/images/Cart/JavaPrograming.jpg";
 import Imgs6 from "../../public/images/Cart/Js.jpg";
 import Imgs7 from "../../public/images/Cart/Algebra.png";
+import Imgs8 from "../../public/images/Cart/DataStructure.jpeg";
+import Imgs9 from "../../public/images/Cart/StrucureUnion.jpg";
+import Imgs10 from "../../public/images/Cart/OppPython.jpg";
+import Imgs11 from "../../public/images/Cart/oppCpp.png";
+import Imgs12 from "../../public/images/Cart/oppCSharp.png";
+import Imgs13 from "../../public/images/Cart/DsaJava.jpg";
+import Imgs14 from "../../public/images/Cart/personalFinance101.jpeg";
+import Imgs15 from "../../public/images/Cart/personalFinance2.jpeg";
+import Imgs16 from "../../public/images/Cart/investment_management.jpg";
+import Imgs17 from "../../public/images/Cart/activeTrading.jpg";
+import Imgs18 from "../../public/images/Cart/investingBusiness.jpg";
+import Imgs19 from "../../public/images/Cart/business-forbe.jpg";
+import Imgs20 from "../../public/images/Cart/business_Entrepreneuship.jpeg";
+import Imgs21 from "../../public/images/Cart/technologyEntrepreneurship.jpg";
+import Imgs22 from "../../public/images/Cart/inovationEntrepreneuriat.jpg";
+import Imgs23 from "../../public/images/Cart/communication.jpg";
+import Imgs24 from "../../public/images/Cart/selfEsteem.jpg";
+import Imgs25 from "../../public/images/Cart/charisma.jpeg";
+import Imgs26 from "../../public/images/Cart/SelfControl_Discipline.jpg";
 import showcaseImg from "/images/showcase.jpg";
 import showcaseImg2 from "/images/showcase2.jpg";
 import showcaseImg3 from "/images/showcase3.jpg";
@@ -804,7 +823,7 @@ const moreCourses = [
 const courseDetData = {
   path: "/",
   img: cardImg,
-  id: 1,
+  id: 0,
   ttl: "Learn Python: The Complete Python Programming Course",
   desc: "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
   price: 600,
@@ -974,6 +993,383 @@ const crsData7 = {
     "Java For Beginners : This course is meant for absolute beginners in Algebra.",
 };
 
+
+
+const crsData8 = {
+  path: "/",
+  img: Imgs8,
+  id: 9,
+  ttl: "Learn DSA: The Complete Data Strucure Course",
+  authDet:
+    "Learn A-Z everything about Python, from the basics, to advanced topics and more",
+  prc: 0,
+  oldprc: 3299,
+  stars: { a: 1, b: 1, c: 1, d: 2, e: 9 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "DSA For Beginners : This course is meant for absolute beginners in programming",
+};
+
+const crsData9 = {
+  path: "/",
+  img: Imgs9,
+  id: 10,
+  ttl: "Learn Atrucure and Unions: The Complete Stucture and Union Course in C",
+  authDet:
+    "Learn A-Z everything about Structures, from the basics, to advanced topics  and more",
+  prc: 0,
+  oldprc: 3299,
+  stars: { a: 2, b: 8, c: 1, d: 9, e: 9 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Strucure For Beginners : This course is meant for absolute beginners in programming or in C.",
+};
+const crsData10 = {
+  path: "/",
+  img: Imgs10,
+  id: 11,
+  ttl: "Learn OOP in Pyhton in : The Complete Python Programming Course",
+  authDet:
+    "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 9 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Python For Beginners : This course is meant for absolute beginners in programming or in python.",
+};
+const crsData11 = {
+  path: "/",
+  img: Imgs11,
+  id: 12,
+  ttl: "Learn C#: The Complete C# Course",
+  authDet:
+    "Learn A-Z everything about CSS, from the basics, to advanced topics like Animation and more.",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "CSS For Beginners : This course is meant for absolute beginners in css.",
+};
+const crsData12 = {
+  path: "/",
+  img: Imgs12,
+  id: 13,
+  ttl: "Learn OOP C++: The Complete C++ Course",
+  authDet:
+    "Learn A-Z everything about PHP, from the basics, to advanced topics like Authenification.",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "PHP For Beginners : This course is meant for absolute beginners in programming or in C++.",
+};
+const crsData13 = {
+  path: "/",
+  img: Imgs13,
+  id: 14,
+  ttl: "Learn DSA in Java: The Complete Java Course",
+  authDet:
+    "Learn A-Z everything about Java, from the basics, to advanced topics",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Js For Beginners : This course is meant for absolute beginners in programming or in Js.",
+};
+const crsData14 = {
+  path: "/",
+  img: Imgs14,
+  id: 15,
+  ttl: "Learn Personal Finance",
+  authDet:
+    "Learn A-Z everything about Finance, from the basics, to advanced topics",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 9, d: 8, e: 9 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Finance For Beginners : This course is meant for absolute beginners in Finance.",
+};
+const crsData15 = {
+  path: "/",
+  img: Imgs15,
+  id: 16,
+  ttl: "Finance with Khana Academy: The Complete Finance Course",
+  authDet:
+    "Learn A-Z everything about Finance",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Finance for every one",
+};
+
+
+
+
+
+
+
+const crsData16 = {
+  path: "/",
+  img: Imgs16,
+  id: 17,
+  ttl: "Investment Maangement",
+  authDet:
+    "Learn A-Z everything about Investment",
+  prc: 0,
+  oldprc: 3299,
+  stars: { a: 1, b: 1, c: 1, d: 2, e: 9 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Complete Investment course.",
+};
+
+const crsData17 = {
+  path: "/",
+  img: Imgs17,
+  id: 18,
+  ttl: "Learn Active trading Course",
+  authDet:
+    "Learn A-Z everything trading, from the basics, to advanced topics",
+  prc: 0,
+  oldprc: 3299,
+  stars: { a: 2, b: 8, c: 1, d: 9, e: 9 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Trade like pro",
+};
+const crsData18 = {
+  path: "/",
+  img: Imgs18,
+  id: 19,
+  ttl: "Investing Business",
+  authDet:
+    "Learn about investment and Business",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 9 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Learn about investment and Business, from the basic to a pro",
+};
+const crsData19 = {
+  path: "/",
+  img: Imgs19,
+  id: 20,
+  ttl: "Tedx: Business",
+  authDet:
+    "Learn A-Z everything about Business",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Ted Talk, business",
+};
+const crsData20 = {
+  path: "/",
+  img: Imgs20,
+  id: 21,
+  ttl: "Business Entrepreneurship",
+  authDet:
+    "Learn A-Z everything about Entrepreneurship",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Entrepreneurship and business for everyone. The  key to success",
+};
+const crsData21 = {
+  path: "/",
+  img: Imgs21,
+  id: 22,
+  ttl: "Technology Entrepreneurship",
+  authDet:
+    "The Futute: Technology Entrepreneurship",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Technology Entrepreneurship : This course is meant for absolute beginners in Entrepreneurship",
+};
+const crsData22= {
+  path: "/",
+  img: Imgs22,
+  id: 23,
+  ttl: "Innovation Entepreneuship",
+  authDet:
+    "Learn A-Z everything about Inovation and Entrepreneurship",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "What you need to know about Inovation and Government Entrepreneurship",
+};
+const crsData23 = {
+  path: "/",
+  img: Imgs23,
+  id: 24,
+  ttl: "Enhence your communication skills",
+  authDet:
+    "Learn A-Z everything about Communication skills",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Selfdevelopment : Communication skills",
+};
+const crsData24 = {
+  path: "/",
+  img: Imgs24,
+  id: 25,
+  ttl: "Enhence your Self-Esteem",
+  authDet:
+    "Learn A-Z everything about Self-Esteem",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Selfdevelopment : Self-Esteem",
+};
+const crsData25 = {
+  path: "/",
+  img: Imgs25,
+  id: 26,
+  ttl: "Develop your Charisma",
+  authDet:
+    "Learn A-Z everything about Charisma",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Selfdevelopment : Charisma",
+};
+const crsData26 = {
+  path: "/",
+  img: Imgs26,
+  id: 27,
+  ttl: "Enhence your Self-Control and Discipline",
+  authDet:
+    "Learn A-Z everything about Discipline",
+  prc: 600,
+  oldprc: 3299,
+  stars: { a: 2, b: 3, c: 5, d: 8, e: 1 },
+  noOfRats: 5,
+  updatedDate: new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "long",
+  }).format(new Date()),
+  courseDuration: 1000000,
+  level: "Beginner Level",
+  crsSubtxt:
+    "Selfdevelopment : Self-Control and Discipline",
+};
+
+
+
+
+
 const coursesData = [
   crsData,
   crsData1,
@@ -1005,6 +1401,81 @@ const coursesData3 = [
   crsData,
   crsData6,
 ];
+const coursesData4 = [
+  crsData8,
+  crsData9,
+  crsData10,
+  crsData11,
+  crsData12,
+  crsData13,
+  crsData,
+  crsData6,
+];
+const coursesData5 = [
+  crsData14,
+  crsData15,
+  crsData16,
+  crsData17,
+  crsData19,
+  crsData20,
+  crsData21,
+  crsData22,
+];
+const coursesData6 = [
+  crsData22,
+  crsData21,
+  crsData20,
+  crsData17,
+  crsData19,
+  crsData16,
+  crsData15,
+  crsData18,
+];
+const coursesData7 = [
+  crsData23,
+  crsData24,
+  crsData25,
+  crsData26,
+  crsData22,
+  crsData21,
+  crsData20,
+  crsData17,
+];
+const coursesData8 = [
+  crsData12,
+  crsData24,
+  crsData13,
+  crsData26,
+  crsData10,
+  crsData21,
+  crsData16,
+  crsData20,
+  crsData11,
+  crsData6,
+  crsData2,  
+  crsData20,
+  crsData17,
+];
+const coursesData9 = [
+  crsData23,
+  crsData24,
+  crsData5,
+  crsData12,
+  crsData13,
+  crsData4,
+  crsData15,
+  crsData16,
+  crsData,
+  crsData3,
+  crsData20,
+  crsData19,
+  crsData18,
+  crsData22,
+  crsData21,
+  crsData14,
+  crsData17,
+];
+
 
 const crsDataWO = {
   path: "/course/view/video",
@@ -1565,6 +2036,12 @@ export {
   coursesInCartData,
   coursesData2,
   coursesData3,
+  coursesData4,
+  coursesData5,
+  coursesData6,
+  coursesData7,
+  coursesData9,
+  coursesData8,
   courseDataWithOptions,
   countryOptions,
   stateOptions,

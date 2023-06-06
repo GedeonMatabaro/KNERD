@@ -6,7 +6,7 @@ import rightArrowIcon from "/icons/down-arrow.svg";
 
 import css from "./VerticalCategoryMenuBar.module.css";
 
-const VerticalCategoryMenuBar = () => {
+const VerticalCategoryMenuBar = (props) => {
   // Adding event listener to toggle VerticalCategoryMenuBar on hover
   useEffect(() => {
     const cats = document.getElementById("cats");
@@ -23,20 +23,20 @@ const VerticalCategoryMenuBar = () => {
       }
     });
 
-    for (let i = 0; i < catDivs.length; i++) {
-      catDivs[i].addEventListener("mouseleave", () => {
-        subCatDivs[i].style = "display: none";
-      });
-    }
+    // for (let i = 0; i < catDivs.length; i++) {
+    //   catDivs[i].addEventListener("mouseleave", () => {
+    //     //subCatDivs[i].style = "display: none";
+    //   });
+    // }
 
-    for (let i = 0; i < subCatDivs.length; i++) {
-      subCatDivs[i].addEventListener("mouseover", () => {
-        subCatDivs[i].style = "display: flex; align: center; flex-direction";
-      });
-      subCatDivs[i].addEventListener("mouseleave", () => {
-        subCatDivs[i].style = "display: none";
-      });
-    }
+    // for (let i = 0; i < subCatDivs.length; i++) {
+    //   subCatDivs[i].addEventListener("mouseover", () => {
+    //     subCatDivs[i].style = "display: flex; align: center; flex-direction";
+    //   });
+    //   subCatDivs[i].addEventListener("mouseleave", () => {
+    //     subCatDivs[i].style = "display: none";
+    //   });
+    // }
 
     return () => {
       cats.removeEventListener("mouseover", (e) => {
@@ -55,14 +55,14 @@ const VerticalCategoryMenuBar = () => {
           subCatDivs[i].style = "display: none";
         });
       }
-      for (let i = 0; i < subCatDivs.length; i++) {
-        subCatDivs[i].removeEventListener("mouseover", () => {
-          subCatDivs[i].style = "display: flex";
-        });
-        subCatDivs[i].addEventListener("mouseleave", () => {
-          subCatDivs[i].style = "display: none";
-        });
-      }
+      // for (let i = 0; i < subCatDivs.length; i++) {
+      //   subCatDivs[i].removeEventListener("mouseover", () => {
+      //     subCatDivs[i].style = "display: flex";
+      //   });
+      //   subCatDivs[i].addEventListener("mouseleave", () => {
+      //     subCatDivs[i].style = "display: none";
+      //   });
+      // }
     };
   }, []);
 
@@ -71,7 +71,7 @@ const VerticalCategoryMenuBar = () => {
       <div className={css.innerDiv}>
         <div className={css.cats} id="cats" >
           {categoriesSubCategoriesData?.map((cat) => (
-            <div
+            <div onClick={() => props.onClick(cat.id)}
               key={cat.id}
               className={[css.category, "categoryDiv"].join(" ")}
               id={`cat-${cat.id}`}
@@ -86,7 +86,7 @@ const VerticalCategoryMenuBar = () => {
           <img src={rightArrowIcon} alt="right arrow" className={css.icon} />
         </div>
       </div>
-      {categoriesSubCategoriesData?.map((cat) => (
+      {/* {categoriesSubCategoriesData?.map((cat) => (
         <div
           className={[css.subCat, `subCat-${cat.id}`, "subCatDiv"].join(" ")}
           key={`subcatCat-${cat.id}`}
@@ -102,7 +102,7 @@ const VerticalCategoryMenuBar = () => {
             </div>
           ))}
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
