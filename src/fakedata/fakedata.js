@@ -12,7 +12,7 @@ import Imgs3 from "../../public/images/Cart/Css_programming.jpg";
 import Imgs4 from "../../public/images/Cart/Php_programming.jpg";
 import Imgs5 from "../../public/images/Cart/JavaPrograming.jpg";
 import Imgs6 from "../../public/images/Cart/Js.jpg";
-import Imgs7 from "../../public/images/Cart/Algebra.png";
+import Imgs7 from "../../public/images/Cart/algebra.png";
 import Imgs8 from "../../public/images/Cart/DataStructure.jpeg";
 import Imgs9 from "../../public/images/Cart/StrucureUnion.jpg";
 import Imgs10 from "../../public/images/Cart/OppPython.jpg";
